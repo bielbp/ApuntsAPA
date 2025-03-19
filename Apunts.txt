@@ -1,0 +1,223 @@
+Formulari APA
+Nom del compte:
+Unix user account: biel
+Pasword del compte
+password for biel: 0000
+
+Abans de instalar noves llibreries sempre seguir això:
+sudo apt update
+sudo apt upgrade
+
+Entrar a python:
+ipython3
+
+Operacions bàsiques:
+Divisió real: /  Ex: ¾
+Divisió entera: // ex: 3//4
+Residu: % 
+Potència: **
+
+Propitat:
+In [36]: a=3
+
+In [37]: a+=1
+
+In [38]: a
+Out[38]: 4
+
+
+Clear: Neteja la pagina
+
+Assignació:
+=
+
+Nota: amb el punt i coma aconseguim que no surti per pantalla.
+
+Commands basics:
+Comentari: # (Elimina tot el que va despres de # a la línea )
+Cadena de text: 
+Ex:
+In [13]: '''
+    ...: ana
+    ...: pots
+    ...: escriure
+    ...: tant
+    ...: com
+    ...: vulgues
+    ...: '''
+Out[13]: '\nana \npots \nescriure \ntant\ncom\nvulgues\n'
+
+Funcions:
+Entrar a la funcio: nomfunc()
+Sortir a la funció: q
+
+Pots
+In [20]: int(3.5)
+Out[20]: 3
+
+Arrodonir: Et retorna l’enter més proper a a l’enter parell en el cas de .5
+In [22]: round(3.5)
+Out[22]: 4
+
+Minim/Maxim:
+In [24]: min(3,5,8)
+Out[24]: 3
+
+Print: 
+In [25]: print(4,3,5,’hola món’)
+4 3 5 hola món
+Nota: Print no retorna res, nomes escriu per pantalla
+
+Len:
+In [27]: len('hola món')
+Out[27]: 8
+
+Guió baix:
+emmagatzema l’anterior resultat
+
+Operadors Booleans:
+True: True
+False: False
+In [39]: 3<4
+Out[39]: True
+Nota: False nomes avalua a 0, res (none) o false
+
+Operadors relacionals:
+==,<,>,<=,>=,!=
+
+
+
+
+Operadors lògics:
+NOT: Negació
+AND: Suma
+OR: Multiplicació
+Nota: L’ordre d’avaluació es NOT, AND i per acabar OR 
+Ex: -3*4+5*6
+Not false and true or i and b
+
+Suma de valors:
+sum((1,2))
+
+Resposta anterior(ANS a la calculadora):
+_
+
+Dins o fora:
+in/not in
+ex: In [18]: 1 in (1,2,3)
+Out[18]: True
+ 
+Operador is: Permet mirar si dos objectes son el mateix, no si tenen el mateix valor, nomes si son el mateix objecte
+In [19]: a=571
+
+In [20]: b=a
+
+In [21]: a==b
+Out[21]: True
+
+In [22]: a is b
+Out[22]: True
+
+In [23]: b=571
+
+In [24]: a==b
+Out[24]: True
+
+In [25]: a is b
+Out[25]: False
+
+Plot: 
+import matplotlib.pyplot as plt
+plt.plot()
+plt.show()
+
+Numeros complexes: j
+
+Numpy:
+import numpy as np
+
+In [51]: np.linspace(0, 10, 11)
+Out[51]: array([ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10.])
+Scipy:
+import scipy as sc
+Soundfile 
+
+
+
+descarregar a nous paquets:
+pip install nompaquet
+
+crear entorn virtual:
+python3.12 -m venv apa
+entrar entorn virtual:
+source apa/bin/activate
+sortir entorn virutal:
+deactivate
+
+jupiter:
+jupyter-lab
+
+crear carpeta: 
+~$ mkdir APA
+accedir carpeta:
+~$ cd APA
+
+
+
+Github: 
+
+Clonar un repositori:
+git clone https://github.com/bielbp/APA-T2.git
+
+veure que hi ha a la carpeta
+dir
+
+veure l'estat del directori
+git status
+
+entrar al visual studio
+code .
+
+afegir els canvis: (quan estas a la mateixa carpeta)
+gir add .
+
+recuperar versions 
+git restore 
+
+Identificar-te
+git config --global user.email "biel.bernal@estudiantat.upc.edu"
+git config --global user.name "Biel Bernal Pratdesaba"
+
+Fer una confirmació de una modificació 
+git commit 
+(s'obrirà nano i escrius el nom)
+ctr+o/enter
+sortir
+
+
+
+Actualitzar el github:
+git push
+
+Si s'ha canviat des de una altre maquina
+git fetch
+
+avans de començar
+git pull
+
+per fer servir una funcio d'un arixiu que has creat 
+run nomArxiu
+
+per fer les proves unitaries de doctest
+import doctest
+doctest.testmod(fitxer)
+
+Executar un fitxer
+python3 nomfitxer
+
+Executar fitxer i que mostri les proves unitaries
+python3 nomfitxer -v
+
+guardar estat a ipython3
+save nomestat
+
